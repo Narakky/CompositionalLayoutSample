@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     var viewController: UIViewController? {
       switch self {
       case .list: return ListViewController()
-      case .grid: return nil
+      case .grid: return GridViewController()
       case .insetItemGrid: return nil
       case .twoColumnsGrid: return nil
       case .distinctSections: return nil
@@ -122,7 +122,9 @@ extension ViewController: UICollectionViewDelegate {
       collectionView.deselectItem(at: indexPath, animated: true)
     }
 
-    guard let viewController = items[indexPath.item].viewController else { return }
+    let item = items[indexPath.item]
+    guard let viewController = item.viewController else { return }
+    viewController.navigationItem.title = item.title
     navigationController?.pushViewController(viewController, animated: true)
   }
 }

@@ -1,5 +1,5 @@
 //
-//  LitViewController.swift
+//  GridViewController.swift
 //  CompositionalLayoutSample
 //
 //  Created by Naraki on 2/20/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ListViewController: UIViewController {
+final class GridViewController: UIViewController {
   enum Section {
     case main
   }
@@ -28,20 +28,19 @@ final class ListViewController: UIViewController {
     configureDataSource()
   }
 
-  // MARK: - Privates
+  // MARK: - Private
 
   private func generateLayout() -> UICollectionViewLayout {
     // MARK: Item
-    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
                                           heightDimension: .fractionalHeight(1))
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
     // MARK: Group
     let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
-                                           heightDimension: .absolute(66))
+                                           heightDimension: .fractionalWidth(0.2))
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                    subitems: [item])
-
     // MARK: Section
     let section = NSCollectionLayoutSection(group: group)
 
@@ -52,7 +51,8 @@ final class ListViewController: UIViewController {
   }
 
   private func configureCollectionView() {
-    collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: generateLayout())
+    collectionView = UICollectionView(frame: view.bounds,
+                                      collectionViewLayout: generateLayout())
     collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     collectionView.backgroundColor = .systemBackground
     collectionView.register(ListCell.self, forCellWithReuseIdentifier: ListCell.reuseIdentifier)
@@ -61,25 +61,19 @@ final class ListViewController: UIViewController {
   }
 
   private func configureDataSource() {
-    dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView) { (collectionView, indexPath, item) -> UICollectionViewCell? in
+    dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView) { (collectionView, indexPath, item) -> UICollectionViewCell in
       guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListCell.reuseIdentifier, for: indexPath) as? ListCell else { return UICollectionViewCell() }
-      cell.label.text = "\(item)番目のセルです"
+      cell.label.text = item.description
       return cell
     }
 
-    let snapshot = snapshotForCurrentState()
-    dataSource.apply(snapshot, animatingDifferences: false)
-  }
-
-  private func snapshotForCurrentState() -> NSDiffableDataSourceSnapshot<Section, Int> {
-    var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
-    snapshot.appendSections([.main])
-    snapshot.appendItems(items)
-    return snapshot
+    // MARK: Initial Data
   }
 }
 
-extension ListViewController: UICollectionViewDelegate {
+// MARK: - UICollectionViewDelegate
+
+extension GridViewController: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     collectionView.deselectItem(at: indexPath, animated: true)
   }

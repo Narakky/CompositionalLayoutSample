@@ -15,6 +15,7 @@
 		04DC8B6123FE3C280054CB16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DC8B5F23FE3C280054CB16 /* LaunchScreen.storyboard */; };
 		04DC8B6A23FE45E70054CB16 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B6923FE45E70054CB16 /* ListCell.swift */; };
 		04DC8B6D23FE616F0054CB16 /* LitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B6C23FE616F0054CB16 /* LitViewController.swift */; };
+		04DC8B6F23FE6A5D0054CB16 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B6E23FE6A5D0054CB16 /* GridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		04DC8B6223FE3C280054CB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DC8B6923FE45E70054CB16 /* ListCell.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; tabWidth = 2; };
 		04DC8B6C23FE616F0054CB16 /* LitViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LitViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		04DC8B6E23FE6A5D0054CB16 /* GridViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				04DC8B6C23FE616F0054CB16 /* LitViewController.swift */,
+				04DC8B6E23FE6A5D0054CB16 /* GridViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				04DC8B6D23FE616F0054CB16 /* LitViewController.swift in Sources */,
 				04DC8B5923FE3C260054CB16 /* ViewController.swift in Sources */,
+				04DC8B6F23FE6A5D0054CB16 /* GridViewController.swift in Sources */,
 				04DC8B6A23FE45E70054CB16 /* ListCell.swift in Sources */,
 				04DC8B5523FE3C260054CB16 /* AppDelegate.swift in Sources */,
 				04DC8B5723FE3C260054CB16 /* SceneDelegate.swift in Sources */,
