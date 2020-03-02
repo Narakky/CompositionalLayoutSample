@@ -55,19 +55,26 @@ final class GridViewController: UIViewController {
                                       collectionViewLayout: generateLayout())
     collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     collectionView.backgroundColor = .systemBackground
-    collectionView.register(ListCell.self, forCellWithReuseIdentifier: ListCell.reuseIdentifier)
+    collectionView.register(TextCell.self, forCellWithReuseIdentifier: TextCell.reuseIdentifier)
     view.addSubview(collectionView)
     collectionView.delegate = self
   }
 
   private func configureDataSource() {
     dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView) { (collectionView, indexPath, item) -> UICollectionViewCell in
-      guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListCell.reuseIdentifier, for: indexPath) as? ListCell else { return UICollectionViewCell() }
+      guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TextCell.reuseIdentifier, for: indexPath) as? TextCell else { return UICollectionViewCell() }
       cell.label.text = item.description
+      cell.label.textColor = .black
+      cell.contentView.backgroundColor = .yellow
       return cell
     }
 
     // MARK: Initial Data
+
+    var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
+    snapshot.appendSections([.main])
+    snapshot.appendItems(Array(0..<100))
+    dataSource.apply(snapshot, animatingDifferences: false)
   }
 }
 
