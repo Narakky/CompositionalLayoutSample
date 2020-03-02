@@ -42,10 +42,10 @@ extension BadgeSupplementaryView {
             label.centerXAnchor.constraint(equalTo: centerXAnchor),
             label.centerYAnchor.constraint(equalTo: centerYAnchor)
             ])
-        label.font = UIFont.preferredFont(forTextStyle: .body)
+        label.font = .boldSystemFont(ofSize: 16)
         label.textAlignment = .center
-        label.textColor = .black
-        backgroundColor = .green
+        label.textColor = .white
+        backgroundColor = .red
         configureBorder()
     }
     func configureBorder() {

@@ -44,8 +44,8 @@ extension ItemBadgeSupplementaryViewController {
     private func makeLayout() -> UICollectionViewLayout {
         // MARK: Badge
         let badgeAnchor = NSCollectionLayoutAnchor(edges: [.top, .trailing], fractionalOffset: .init(x: 0.3, y: -0.3))
-        let badgeSize = NSCollectionLayoutSize(widthDimension: .absolute(20),
-                                               heightDimension: .absolute(20))
+        let badgeSize = NSCollectionLayoutSize(widthDimension: .absolute(30),
+                                               heightDimension: .absolute(30))
         let badge = NSCollectionLayoutSupplementaryItem(layoutSize: badgeSize,
                                                         elementKind: ItemBadgeSupplementaryViewController.badgeElementKind,
                                                         containerAnchor: badgeAnchor)
@@ -76,7 +76,7 @@ extension ItemBadgeSupplementaryViewController {
         dataSource = DataSource(collectionView: collectionView) { (collectionView, indexPath, item) -> UICollectionViewCell? in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TextCell.reuseIdentifier, for: indexPath) as? TextCell else { return UICollectionViewCell() }
 
-            cell.label.text = "\(item)"
+            cell.label.text = "\(indexPath.row + 1)"
             cell.contentView.backgroundColor = .white
             cell.contentView.layer.borderColor = UIColor.black.cgColor
             cell.contentView.layer.borderWidth = 1
