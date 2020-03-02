@@ -37,7 +37,7 @@ class ViewController: UIViewController {
       case .list: return ListViewController()
       case .grid: return GridViewController()
       case .insetItemGrid: return InsetItemsGridViewController()
-      case .twoColumnsGrid: return nil
+      case .twoColumnsGrid: return TwoColumnsGridViewController()
       case .distinctSections: return nil
       case .adaptiveSections: return nil
       case .itemBadges: return nil
