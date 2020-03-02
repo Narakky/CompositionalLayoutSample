@@ -40,7 +40,7 @@ class ViewController: UIViewController {
       case .twoColumnsGrid: return TwoColumnsGridViewController()
       case .distinctSections: return DistinctSectionsViewController()
       case .adaptiveSections: return AdaptiveSectionsViewController()
-      case .itemBadges: return nil
+      case .itemBadges: return ItemBadgeSupplementaryViewController()
       case .sectionHeaderFooter: return nil
       case .pinnedSectionHeaders: return nil
       case .sectionBackgroundDecoration: return nil
