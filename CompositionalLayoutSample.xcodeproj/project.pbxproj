@@ -10,6 +10,7 @@
 		047EA84B240CD6C8007D013D /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA84A240CD6C8007D013D /* TextCell.swift */; };
 		047EA84D240CD743007D013D /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA84C240CD743007D013D /* InsetItemsGridViewController.swift */; };
 		047EA84F240CE07F007D013D /* TwoColumnsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA84E240CE07F007D013D /* TwoColumnsGridViewController.swift */; };
+		047EA851240CE813007D013D /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA850240CE813007D013D /* DistinctSectionsViewController.swift */; };
 		04DC8B5523FE3C260054CB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B5423FE3C260054CB16 /* AppDelegate.swift */; };
 		04DC8B5723FE3C260054CB16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B5623FE3C260054CB16 /* SceneDelegate.swift */; };
 		04DC8B5923FE3C260054CB16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B5823FE3C260054CB16 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		047EA84A240CD6C8007D013D /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		047EA84C240CD743007D013D /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
 		047EA84E240CE07F007D013D /* TwoColumnsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsGridViewController.swift; sourceTree = "<group>"; };
+		047EA850240CE813007D013D /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
 		04DC8B5123FE3C260054CB16 /* CompositionalLayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionalLayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC8B5423FE3C260054CB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04DC8B5623FE3C260054CB16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				04DC8B6E23FE6A5D0054CB16 /* GridViewController.swift */,
 				047EA84C240CD743007D013D /* InsetItemsGridViewController.swift */,
 				047EA84E240CE07F007D013D /* TwoColumnsGridViewController.swift */,
+				047EA850240CE813007D013D /* DistinctSectionsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				04DC8B6D23FE616F0054CB16 /* LitViewController.swift in Sources */,
 				04DC8B5923FE3C260054CB16 /* ViewController.swift in Sources */,
+				047EA851240CE813007D013D /* DistinctSectionsViewController.swift in Sources */,
 				04DC8B6F23FE6A5D0054CB16 /* GridViewController.swift in Sources */,
 				047EA84F240CE07F007D013D /* TwoColumnsGridViewController.swift in Sources */,
 				047EA84D240CD743007D013D /* InsetItemsGridViewController.swift in Sources */,
