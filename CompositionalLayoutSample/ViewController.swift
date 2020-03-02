@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     case grid = "グリッド"
     case insetItemGrid = "グリッド（間隔有）"
     case twoColumnsGrid = "2カラムグリッド"
-    case distinctSections
-    case adaptiveSections
+    case distinctSections = "常に固定のレイアウト"
+    case adaptiveSections = "画面サイズに応じたレイアウト"
     case itemBadges = "バッジ"
     case sectionHeaderFooter = "セクションヘッダとセクションフッタ"
     case pinnedSectionHeaders = "固定されたセクションヘッダ"
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
       case .insetItemGrid: return InsetItemsGridViewController()
       case .twoColumnsGrid: return TwoColumnsGridViewController()
       case .distinctSections: return DistinctSectionsViewController()
-      case .adaptiveSections: return nil
+      case .adaptiveSections: return AdaptiveSectionsViewController()
       case .itemBadges: return nil
       case .sectionHeaderFooter: return nil
       case .pinnedSectionHeaders: return nil
