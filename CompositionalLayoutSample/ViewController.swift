@@ -41,7 +41,7 @@ class ViewController: UIViewController {
       case .distinctSections: return DistinctSectionsViewController()
       case .adaptiveSections: return AdaptiveSectionsViewController()
       case .itemBadges: return ItemBadgeSupplementaryViewController()
-      case .sectionHeaderFooter: return nil
+      case .sectionHeaderFooter: return SectionHeadersFootersViewController()
       case .pinnedSectionHeaders: return nil
       case .sectionBackgroundDecoration: return nil
       case .nestedGroup: return nil
