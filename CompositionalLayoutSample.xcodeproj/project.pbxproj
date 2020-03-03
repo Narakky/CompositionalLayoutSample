@@ -16,6 +16,7 @@
 		047EA857240D0911007D013D /* BadgeSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA856240D0911007D013D /* BadgeSupplementaryView.swift */; };
 		047EA859240D0D10007D013D /* SectionHeadersFootersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA858240D0D10007D013D /* SectionHeadersFootersViewController.swift */; };
 		047EA85B240D0E17007D013D /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA85A240D0E17007D013D /* TitleSupplementaryView.swift */; };
+		047EA85D240D168B007D013D /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA85C240D168B007D013D /* PinnedSectionHeaderFooterViewController.swift */; };
 		04DC8B5523FE3C260054CB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B5423FE3C260054CB16 /* AppDelegate.swift */; };
 		04DC8B5723FE3C260054CB16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B5623FE3C260054CB16 /* SceneDelegate.swift */; };
 		04DC8B5923FE3C260054CB16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC8B5823FE3C260054CB16 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		047EA856240D0911007D013D /* BadgeSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSupplementaryView.swift; sourceTree = "<group>"; };
 		047EA858240D0D10007D013D /* SectionHeadersFootersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeadersFootersViewController.swift; sourceTree = "<group>"; };
 		047EA85A240D0E17007D013D /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
+		047EA85C240D168B007D013D /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		04DC8B5123FE3C260054CB16 /* CompositionalLayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionalLayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC8B5423FE3C260054CB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04DC8B5623FE3C260054CB16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				047EA852240CFC18007D013D /* AdaptiveSectionsViewController.swift */,
 				047EA854240D0505007D013D /* ItemBadgeSupplementaryViewController.swift */,
 				047EA858240D0D10007D013D /* SectionHeadersFootersViewController.swift */,
+				047EA85C240D168B007D013D /* PinnedSectionHeaderFooterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				04DC8B6D23FE616F0054CB16 /* LitViewController.swift in Sources */,
 				04DC8B5923FE3C260054CB16 /* ViewController.swift in Sources */,
+				047EA85D240D168B007D013D /* PinnedSectionHeaderFooterViewController.swift in Sources */,
 				047EA851240CE813007D013D /* DistinctSectionsViewController.swift in Sources */,
 				04DC8B6F23FE6A5D0054CB16 /* GridViewController.swift in Sources */,
 				047EA853240CFC18007D013D /* AdaptiveSectionsViewController.swift in Sources */,
